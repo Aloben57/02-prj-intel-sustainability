@@ -1,1 +1,117 @@
 /* Add your CSS here */
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(27, 94, 180);
+  color: rgb(240, 242, 255);
+}
+
+/* Header styling */
+header{
+  background: rgb(239, 245, 255);
+  color: rgb(66, 66, 255);
+}
+
+header div{
+  padding: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Intel_Logo{
+  max-width: 300px;
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+header p{
+  text-align: center;
+  padding: 15px;
+  max-width: 600px;
+}
+
+/* Horizontal scrolling timeline container */
+.container{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 30px 20px;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, rgb(27, 94, 180), rgb(15, 50, 120));
+}
+
+/* Individual timeline card */
+.media-element{
+  position: relative;
+  width: 320px;
+  flex-shrink: 0;
+  background: rgb(50, 120, 200);
+  border: 2px solid rgb(100, 150, 255);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect on timeline cards */
+.media-element:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Year and title container */
+.info{
+  padding: 15px;
+  background: rgb(66, 120, 180);
+  border-bottom: 2px solid rgb(100, 150, 255);
+}
+
+.info h2{
+  font-size: 24px;
+  color: rgb(255, 200, 100);
+  margin-bottom: 5px;
+}
+
+.info h3{
+  font-size: 16px;
+  color: rgb(220, 240, 255);
+}
+
+/* Image styling in timeline */
+.media-element img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Paragraph/description styling */
+.media-element p{
+  padding: 15px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(220, 240, 255);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+}
